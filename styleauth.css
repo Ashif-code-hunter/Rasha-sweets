@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+}
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Black.ttf);
+  }
+  html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+.logo{
+    position: absolute;
+width: 150px;
+height: 120px;
+left: -35px;
+top: 1px;
+
+}
+.third{
+position: absolute;
+width: 1250px;
+height: 800px;
+left: -215px;
+
+top: 0px;
+}
+
+.logoname{
+position: absolute;
+width: 318px;
+height: 82px;
+left: 75px;
+top: 30px;
+background: linear-gradient(to right, #61045f 0%, #aa076b 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family:'Lucida handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 65px;
+
+color: #000000;
+}
+.one{
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+}
+
+.title{
+    position: absolute;
+width: 388px;
+height: 71px;
+
+
+font-family: poppins;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 72px;
+
+color: #000000;
+}
+.redirect{
+    position: absolute;
+width: 275px;
+height: 27px;
+top:55px;
+left: 5px;
+
+font-family: Calibri;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 27px;
+
+color: #636363;
+}
+.logincolor{
+    color: #D45252;
+    text-decoration: none;
+}
+
+.data{
+    position: absolute;
+    top: 150px;
+}
+
+
+.txt {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 350px 0px 0px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #61045f;
+    font-family:calibri light,Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 18pt;
+    background-color: #F4DABA;
+    opacity: 0.5;
+    border-radius: 20px;
+  }
+  
+
+  .register{
+    background-color:#61045f;
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family:calibri light,Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    transition: 0.5s;
+    }
+    
+    .register:hover{
+      padding: 25px 45px;
+    }
+    

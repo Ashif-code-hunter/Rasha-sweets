@@ -182,16 +182,20 @@
             <img src="contact us.png" alt="contact us" class="contactpic">
         </div>
         <div class="rightcontact">
-            <form>
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="fname" value="your name">
-                <label for="nname">My Phone Number Is</label>
-                <input type="text" id="nname" name="lname" value="your phone number ">
-                <label for="ename">Reach Me At</label>
-                <input type="text" id="ename" name="fname" value="your@email.com">
-                <label for="mname">Message</label>
-                <input type="text" id="mname" name="lname" value="type here">
-                <input type="Submit" id="submit" name="submit" value="Submit">
+            <form action="contact.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" value="your name">
+
+                <label for="phonenos">My Phone Number Is</label>
+                <input type="text" id="phone" name="phonenos" value="your phone number ">
+                
+                <label for="email">Reach Me At</label>
+                <input type="text" id="email" name="email" value="your@email.com">
+                
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" value="type here">
+                
+                <input type="submit" id="submit" name="submit" value="submit">
             </form>
         </div>
      </div>
