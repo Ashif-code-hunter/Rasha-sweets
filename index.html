@@ -19,14 +19,15 @@
 <h1 class="title">Get Started</h1>
 <h6 class="redirect">Already have a account. <a href="login.html" class="logincolor">Log in</a></h6>
 <form class="data" action="register.php" method="POST">
-    <label id="email">Email address</label><br>
-    <input type="text" name="email" class="txt"><br><br>
+
+    <label id="txt">Email address</label><br>
+    <input type="email" name="email" placeholder="Enter Email" class="txt" required><br><br>
 
     <label id="password">Password</label><br>
-    <input type="password" name="password" class="txt"><br><br>
+    <input type="password" name="password" placeholder="Enter Password" class="txt" required><br><br>
 
-    <label id="phoneno">Phone number</label><br>
-    <input type="text" name="phonenos" class="txt"><br><br>
+    <label id="phoneno">Username</label><br>
+    <input type="text" name="user" placeholder="Enter Username" class="txt" required><br><br>
 
     <input type="submit" value="Register"name="register" class="register">
 

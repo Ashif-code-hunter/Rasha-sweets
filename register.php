@@ -9,15 +9,13 @@
 
 if(isset($_POST['register'])&&!empty($_POST['register'])){
   
-    $sql = "insert into public.authenticate(email,password,phoneno)values('".$_POST['email']."','".md5($_POST['password'])."',".$_POST['phonenos'].")";
+    $sql = "insert into public.authenticate(email,password,username)values('".$_POST['email']."','".md5($_POST['password'])."','".$_POST['user']."')";
     $ret = pg_query($dbconn, $sql);
     if($ret){
         
         header('Location: start.html');
     }else{
-            echo $sql;
-        
-            header('Location: errorreg.html');
+     header('Location: errorreg.html');
     }
 }
 
