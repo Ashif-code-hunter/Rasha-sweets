@@ -4,18 +4,18 @@
     $dbname = "login";
     $user = "postgres";
     $password = "8520"; 
-    $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
-    $dbconn = pg_connect($connection_string) or die('Could not connect: ' . pg_last_error()) ;
+    $connection = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
+    $dbconnection = pg_connect($connection) or die('Could not connect: ' . pg_last_error()) ;
 
     if(isset($_POST['login'])&&!empty($_POST['login'])){
     
-        $hashpassword = md5($_POST['password']);
+        $cypher = md5($_POST['password']);
     
-         $sql ="select *from public.authenticate where email = '".pg_escape_string($_POST['email'])."' and password ='".$hashpassword."'";
+         $query ="select *from public.authenticate where email = '".pg_escape_string($_POST['email'])."' and password ='".$cypher."'";
       
-        $data = pg_query($dbconn,$sql); 
-        $login_check = pg_num_rows($data);
-        if($login_check > 0){ 
+        $data = pg_query($dbconnection,$query); 
+        $checki = pg_num_rows($data);
+        if($checki > 0){ 
             
             header('Location: start.html');    
         }else{
@@ -25,3 +25,5 @@
     }
     
     ?>
+
+    <!-- Php code for connecting to database, query sending, serching for the user and routing the page to appropriate webpage -->

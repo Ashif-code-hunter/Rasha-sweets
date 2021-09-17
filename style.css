@@ -95,7 +95,7 @@ ul.navbuttons{
 body{
   height: 755px;
   background-color: #F2CEDA;
-  background-image: url("women chef.jpg");
+  background-image: url("images/women chef.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +167,7 @@ background-color: #61045f;
 
 #about{
   height: 1000px;
-  background-image: url("about.jpg");
+  background-image: url("images/about.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,7 +320,7 @@ a.subhead:hover:before{
 }
 
 #chefs{
-    background-image: url("chefs.jpg");
+    background-image: url("images/chefs.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -503,3 +503,5 @@ transition: 0.5s;
     font-family:calibri light,Arial, Helvetica, sans-serif;
     font-weight: 200  ;
   }
+
+  /* Full css code for start.html */

@@ -4,14 +4,14 @@
     $dbname = "login";
     $user = "postgres";
     $password = "8520"; 
-    $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
-    $dbconn = pg_connect($connection_string) or die('Could not connect: ' . pg_last_error()) ;
+    $connection = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
+    $dbconnection = pg_connect($connection) or die('Could not connect: ' . pg_last_error()) ;
 
 if(isset($_POST['register'])&&!empty($_POST['register'])){
   
-    $sql = "insert into public.authenticate(email,password,username)values('".$_POST['email']."','".md5($_POST['password'])."','".$_POST['user']."')";
-    $ret = pg_query($dbconn, $sql);
-    if($ret){
+    $query = "insert into public.authenticate(email,password,username)values('".$_POST['email']."','".md5($_POST['password'])."','".$_POST['user']."')";
+    $request = pg_query($dbconnection, $query);
+    if($request){
         
         header('Location: start.html');
     }else{
@@ -20,3 +20,5 @@ if(isset($_POST['register'])&&!empty($_POST['register'])){
 }
 
 ?>
+
+<!-- Php code for connecting to database, query sending, registering the user and routing the page to appropriate webpage -->

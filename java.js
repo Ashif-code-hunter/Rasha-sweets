@@ -71,3 +71,5 @@ function Myfunction() {
     window.addEventListener("resize", resizeFunc);
   
   };
+
+  // java script code for navigation bar animation and floating back to top button

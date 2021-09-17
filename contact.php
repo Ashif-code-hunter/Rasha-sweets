@@ -12,7 +12,7 @@
 if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     
 
-  $sql = "insert into public.contact(name,phoneno,email,message)values('".$_POST['name']."','".$_POST['phonenos']."','".$_POST['email']."','".$_POST['message']."')";
+  $sql = "insert into public.contact(name,phoneno,message)values('".$_POST['name']."','".$_POST['phonenos']."','".$_POST['message']."')";
 
   
   $ret = pg_query($dbconn, $sql);
